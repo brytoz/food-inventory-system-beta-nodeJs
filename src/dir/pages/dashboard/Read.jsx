@@ -12,7 +12,7 @@ export default function Read() {
         <div className="flex-1 flex-wrap px-4">
           <Top /> 
           <div className=" flex-wrap  md:flex ">
-            <div class="overflow-x-auto relative shadow-md sm:rounded-lg w-full mt-12">
+            <div className="overflow-x-auto relative shadow-md sm:rounded-lg w-full mt-12">
            <span className="font-base text-base">   To access this inventory, you must create a code for a new user. This code is to avois random people from creating accounts. Due to the policy of this free hosting provider, only the front end and mock data is being uploaded. The alert functionality is complete backend. Below are the functionality this app contains.</span>
               <ol  className="list-inside pl-5 w-full list-decimal space-y-3 antialiased tracking-wide mt-4 text-sm">
                 <li> Only registered administrators are allowed to access the inventory.</li>
