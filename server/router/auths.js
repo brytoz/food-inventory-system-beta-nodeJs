@@ -285,5 +285,25 @@ router.post('/updatepassword', validateToken, async (req, res) => {
     })
 })
 
+// delete  posts with ld
+router.post('/delete-post', validateToken, async (req, res) => {
+  const { id } = req.body
 
+  // delete   status
+  await Products.destroy({
+    where: {
+      id: id,
+    },
+  })
+    .then((userInfo) => {
+      res.status(200).send('Deleted Successfully')
+    })
+    .catch((err) => {
+      res
+        .status(400)
+        .send(
+          'I think something might be wrong with your internet connection. Or try refreshing the page.',
+        )
+    })
+})
 module.exports = router
